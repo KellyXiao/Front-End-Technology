@@ -15,15 +15,21 @@
 ]}
 ```
 
-> 语法规则：数据为键/值 对，键值用：隔开，数据用逗号隔开，[]保存数组，{}保存对象
->
-> JSON 值可以为：数字，字符串，逻辑值，数组，对象，null 示例：30, true, {"xx" : "xx"}, null
+
+
+语法规则：数据为键/值 对，键值用：隔开，数据用逗号隔开，[]保存数组，{}保存对象
+
+JSON 值可以为：数字，字符串，逻辑值，数组，对象，null 示例：30, true, {"xx" : "xx"}, null
+
+
 
 
 
 ## JSON 字符串和Javascript 对象相互转换
 
-> JSON通常是与服务器端交换得到的数据，在接收服务器数据时一般获得的是字符串，可是使用JSON.parse()方法将接收到的字符串转化为js对象
+
+
+JSON通常是与服务器端交换得到的数据，在接收服务器数据时一般获得的是字符串，可是使用JSON.parse()方法将接收到的字符串转化为js对象
 
 ```javascript
 var text = '{ "name":"zhang", "alexa":10000 }';
@@ -35,7 +41,7 @@ document.getElementById("demo").innerHTML = obj.employees[0].firstName + " " +ob
 
 
 
-> js在向服务器发送数据时通常为字符串，可以使用JSON.stringify() 将js对象转换为字符串
+js在向服务器发送数据时通常为字符串，可以使用JSON.stringify() 将js对象转换为字符串
 
 ```js
 var myJSON  = JSON.stringify(obj)
@@ -72,6 +78,8 @@ var myObj = { "name":"zhangsan", "age":11};
   }
   ```
 
+
+
 * 删除对象属性
 
   ```js
@@ -95,11 +103,11 @@ var myObj = { "name":"zhangsan", "age":11};
 
 * 安全策略中的同源策略指的是：所有的请求必须同源，不能再A网站内发送B网站的请求
 
-* <script> <img> <iframe> 包含src属性的html标签不受此限制
+* <script/> <img/> <ifram/e> 包含src属性的html标签不受此限制
 
 
 
-如果情况确实需要跨域访问，可以使用JSONP，它的原理就是 *借助的就是script 标签不受同源策略限制
+如果情况确实需要跨域访问，可以使用JSONP，它的原理就是 **借助的就是script 标签不受同源策略限制**
 
 ```html
 
