@@ -136,7 +136,7 @@ var myObj = { "name":"zhangsan", "age":11};
 
 
 
-或者使用Ajax 封装后的jsonp
+实际工作中上面的写法太繁琐，可以使用Ajax 封装后的jsonp
 
 ```js
 $.ajax({
